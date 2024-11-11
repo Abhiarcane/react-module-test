@@ -1,0 +1,253 @@
+.main-box {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.left-box {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.heading-notes {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.end-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.end-to-end {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  padding: 10px;
+}
+
+.heading-message {
+  font-size: 1rem;
+  text-align: center;
+}
+.wall {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.add-icon img {
+  cursor: pointer;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.group-list {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #2f2f2f2b;
+  color: #222;
+  border-radius: 4px;
+  gap: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.group-item:hover {
+  background-color: #0047ff;
+  color: white;
+}
+
+.group-logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0047ff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.group-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: inherit;
+}
+
+.right-box-active,
+.right-box {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #dae5f5;
+  position: relative;
+}
+
+.group-heading {
+  background-color: #001f8b;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notes-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.note-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.note-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px;
+  background-color: #001f8b;
+  border-top: 1px solid #e0e0e0;
+  position: absolute;
+  bottom: 0;
+}
+
+.note-input input {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+  height: auto;
+  min-height: 3rem;
+  resize: vertical;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.send-btn {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+.modal-input {
+  padding: 3px;
+}
+.input-group {
+  display: flex;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.modal-heading {
+  margin-bottom: 2rem;
+}
+.input-group label {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.btn-group {
+  width: 5rem;
+  font-size: 1rem;
+  background-color: #0047ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-group:hover {
+  background-color: #0035cc;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.color-swatch.selected {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
